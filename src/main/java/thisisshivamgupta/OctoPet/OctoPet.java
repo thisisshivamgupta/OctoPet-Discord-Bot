@@ -14,7 +14,7 @@ public static JDA jda;
 public static String prefix = "~";
 //main method
 public static void main(String[] args) throws LoginException {
-    jda= new JDABuilder(AccountType.BOT).setToken("Nzk5NjA3NzkzNjg2NDEzMzgz.YAGCyg.8dRH9aAh6FlEKJW9mDhm7MvrjBQ").build();
+    jda= new JDABuilder(AccountType.BOT).setToken("Nzk5NjA3NzkzNjg2NDEzMzgz.YAGCyg.8dRH9aAh6FlEKJW9mDhm7MvrjBQ").build();//For safety purpose I've regenerated my token😅
     jda.getPresence().setStatus(OnlineStatus.IDLE);
     jda.getPresence().setGame(Game.playing("Your Server!"));
     jda.addEventListener(new Commands());
